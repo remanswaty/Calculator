@@ -16,6 +16,7 @@
     text-align: right;
     outline: none;
     caret-color: transparent;
+    appearance: none;
 }
 
 .button {
@@ -50,7 +51,7 @@
     height: 90px;
 }
 
-.math-button {
+.button:last-child {
     background-color: rgb(232, 172, 62);
     border: none;
     border-bottom: 2px solid black;
@@ -73,12 +74,20 @@ body {
 
 .heading {
     text-align: center;
-    font-size: 30px;
+    font-size: 25;
     font-family: cursive, sans-serif;
     margin-top: 5px;
     margin-bottom: 15px;
+    font-weight: 100;
+    text-shadow: 0 0 20px rgb(232, 172, 62), 0 0 30px rgb(232, 160, 52);
 }
 
 .screen::placeholder {
     color: white;
+}
+
+.screen::-webkit-inner-spin-button {
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    appearance: none;
 }
